@@ -1,5 +1,5 @@
 {% set name = "plyvel" %}
-{% set version = "1.4.0" %}
+{% set version = "1.5.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 4ea98bea04ebf0f44747bacdfafefc8827787106fbb787f0aedc46482b2dfd53
+  sha256: cd918e0b31690abcd3d202a8742caf951ab2fe1573de7af71c38456847f9202b
 
 build:
   number: 0
