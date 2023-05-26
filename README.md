@@ -1,11 +1,11 @@
-About plyvel
-============
+About plyvel-feedstock
+======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/plyvel-feedstock/blob/main/LICENSE.txt)
 
 Home: https://pypi.org/project/plyvel/
 
 Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/plyvel-feedstock/blob/main/LICENSE.txt)
 
 Summary: Plyvel, a fast and feature-rich Python interface to LevelDB
 
