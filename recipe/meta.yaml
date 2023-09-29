@@ -10,8 +10,10 @@ source:
   sha256: cd918e0b31690abcd3d202a8742caf951ab2fe1573de7af71c38456847f9202b
 
 build:
-  number: 1
-  script: {{ PYTHON }} -m pip install . -vv
+  number: 2
+  script:
+    - cythonize plyvel/_plyvel.pyx
+    - {{ PYTHON }} -m pip install . -vv
 
 requirements:
   build:
@@ -20,6 +22,7 @@ requirements:
     - {{ compiler('cxx') }}
   host:
     - pip
+    - cython
     - python
     - leveldb
   run:
