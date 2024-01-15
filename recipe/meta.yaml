@@ -1,5 +1,5 @@
 {% set name = "plyvel" %}
-{% set version = "1.5.0" %}
+{% set version = "1.5.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: cd918e0b31690abcd3d202a8742caf951ab2fe1573de7af71c38456847f9202b
+  sha256: 3caf6009e4fc24fbf8712d3f5ef3da7e56495c26a488df2161218fc34e46019c
 
 build:
-  number: 2
+  number: 0
   script:
     - cythonize plyvel/_plyvel.pyx
     - {{ PYTHON }} -m pip install . -vv
