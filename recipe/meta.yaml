@@ -10,7 +10,7 @@ source:
   sha256: 3caf6009e4fc24fbf8712d3f5ef3da7e56495c26a488df2161218fc34e46019c
 
 build:
-  number: 0
+  number: 1
   script:
     - cythonize plyvel/_plyvel.pyx
     - {{ PYTHON }} -m pip install . -vv
